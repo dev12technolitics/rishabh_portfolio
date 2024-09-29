@@ -33,7 +33,10 @@ const Sidebar = () => {
            backdrop-blur-md  border-[3px] rounded-full 
             border-white/20 shadow-lg py-[10px] px-[2rem]"
           >
-            <ul className="hidden md:flex items-center justify-center m-0 list-none p-0 gap-x-8">
+            <ul
+              className="hidden md:flex items-center justify-center 
+            m-0 list-none p-0 gap-x-10"
+            >
               <Link href="/about" className="no-underline nav_link">
                 <li className="li_nav gap-x-[5px]">
                   Home

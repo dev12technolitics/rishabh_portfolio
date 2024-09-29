@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1023px) {
+    .paragraph{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .content_box {
+        padding: 0px 0px 0px 60px !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .animated_sm{
+        text-align: center !important;
+        height: 6rem !important;
+    }
+}

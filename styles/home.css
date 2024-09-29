@@ -60,3 +60,36 @@
     /* letter-spacing: 1px; */
  }
 
+ .star-animation {
+   animation: moveStar 5s infinite alternate;
+ }
+ 
+ @keyframes moveStar {
+   0% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateX(40px); /* Move up */
+   }
+   100% {
+     transform: translateX(0); /* Move back down */
+   }
+ }
+
+ @keyframes helloHandAnimation {
+   0% {
+     transform: scale(1) rotate(0deg);
+   }
+   50% {
+     transform: scale(1.1) rotate(10deg);
+   }
+   100% {
+     transform: scale(1) rotate(0deg);
+   }
+ }
+ 
+ .hello-hand {
+   animation: helloHandAnimation 1s infinite;
+ }
+
+ 

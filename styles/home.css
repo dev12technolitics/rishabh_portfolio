@@ -66,7 +66,7 @@
  
  @keyframes moveStar {
    0% {
-     transform: translateY(0);
+     transform: translateX(0);
    }
    50% {
      transform: translateX(40px); /* Move up */
@@ -102,4 +102,37 @@
 
 .image-hover:hover {
   transform: scale(1.1); 
+}
+
+
+
+.dot-animation {
+  animation: dotmove 5s infinite alternate;
+}
+
+@keyframes dotmove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back down */
+  }
+}
+
+
+@keyframes circularMotion {
+  0% {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg);
+  }
+}
+
+.circular-animation {
+  animation: circularMotion 4s linear infinite;
+  position: absolute;
 }

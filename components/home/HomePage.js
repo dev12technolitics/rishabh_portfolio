@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import circaldot from "../../assets/circal_dot.png";
+import dubblestar from "../../assets/dubblestar.png";
 import starone from "../../assets/half-star.png";
 import hii from "../../assets/hello.png";
+import multistar from "../../assets/multistar.png";
 import rishabh from "../../assets/rishabh.png";
 import { AnimatedText } from "../Animate";
 
@@ -55,7 +58,7 @@ const HomePage = () => {
                   alt="image"
                   width={500}
                   height={300}
-                  className="rounded-xl image-hover"
+                  className="rounded-xl image-hover  object-cover"
                 />
               </div>
             </div>
@@ -77,34 +80,47 @@ const HomePage = () => {
                 frontend developer
               </div>
 
-              <div className="py-4">
-                <h1
-                  className="headding mb-0 flex 
+              <div className="relative w-full">
+                <div
+                  className="absolute circular-animation
+                  top-0 right-0 w-20 h-20 z-0 opacity-50"
+                >
+                  <Image
+                    src={multistar}
+                    alt="image"
+                    width={500}
+                    height={300}
+                    className="object-cover"
+                  />
+                </div>
+
+                <div className="py-4 ">
+                  <h1
+                    className="headding mb-0 flex 
                   xl:justify-start
                   lg:justify-start
                   justify-center
-                 
                  "
-                >
-                  Hello!{" "}
-                  <div className="h-14 w-14 px-2 flex items-center justify-center">
-                    {" "}
-                    <Image
-                      src={hii}
-                      alt="Description of image"
-                      width={500}
-                      height={300}
-                      className="hello-hand"
-                    />
-                  </div>
-                  I Am
-                </h1>
-
-                <AnimatedText
-                  texts={texts}
-                  typingSpeed={150}
-                  deletingSpeed={75}
-                />
+                  >
+                    Hello!{" "}
+                    <div className="h-14 w-14 px-2 flex items-center justify-center">
+                      {" "}
+                      <Image
+                        src={hii}
+                        alt="Description of image"
+                        width={500}
+                        height={300}
+                        className="hello-hand"
+                      />
+                    </div>
+                    I Am
+                  </h1>
+                  <AnimatedText
+                    texts={texts}
+                    typingSpeed={150}
+                    deletingSpeed={75}
+                  />
+                </div>
               </div>
 
               <div
@@ -115,36 +131,49 @@ const HomePage = () => {
                 hire me
               </div>
 
-              <div
-                className="bg-white/50 flex items-center 
-           backdrop-blur-md  border-[3px] rounded-xl paragraph
-            border-blue1/50 shadow-lg p-[20px] my-6"
-              >
-                Experienced web developer and trainer with passion for creating
-                attractive and interactive websites meeting customer needs and
-                exceeding expectations. Well-versed in developing React js and
-                Next.js based websites. Excels in HTML, CSS, and JavaScript
-                development.
+              <div className="relative">
+                <div
+                  className="absolute right_absolute
+                 dot-animation top-0 right-[-28px] w-16 h-16 z-0"
+                >
+                  <Image
+                    src={dubblestar}
+                    alt="image"
+                    width={500}
+                    height={300}
+                    className="object-cover"
+                  />
+                </div>
+
+                <div
+                  className="bg-white/20 flex items-center 
+                  backdrop-blur-sm  border-[3px] rounded-xl paragraph
+                  border-blue1/50 shadow-lg p-[20px] my-6 relative z-10"
+                >
+                  Experienced web developer and trainer with passion for
+                  creating attractive and interactive websites meeting customer
+                  needs and exceeding expectations. Well-versed in developing
+                  React js and Next.js based websites. Excels in HTML, CSS, and
+                  JavaScript development.
+                </div>
+
+                <div
+                  className="absolute dot-animation left_absolute
+                bottom-0 left-[-28px] w-16 h-16 z-0"
+                >
+                  <Image
+                    src={circaldot}
+                    alt="image"
+                    width={500}
+                    height={300}
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* <style jsx>{`
-        .sidebar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 250px;
-          height: 100%;
-          z-index: 1000;
-          padding: 15px;
-          transition: transform 0.3s ease-in-out;
-          background: rgba(255, 255, 255, 0.8);
-          backdrop-filter: blur(10px);
-        }
-      `}</style> */}
     </>
   );
 };

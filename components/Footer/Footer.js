@@ -1,6 +1,8 @@
 import { FaFacebookF } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import { SiSkypeforbusiness, SiWhatsapp } from "react-icons/si";
+import { MdOutlineMail } from "react-icons/md";
+
+import { SiWhatsapp } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -17,37 +19,50 @@ const Footer = () => {
        backdrop-blur-lg  rounded-full
         w-full"
         />
-
-        <div
-          className="bg-white/30 flex items-center 
-        backdrop-blur-sm  border-[3px] rounded-full 
-        border-blue1/30 shadow-lg p-[10px]"
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FaFacebookF className="text-blue1" />
-        </div>
-
-        <div
-          className="bg-white/30 flex items-center 
+          <div
+            className="bg-white/30 flex items-center justify-center
         backdrop-blur-sm  border-[3px] rounded-full 
-        border-blue1/30 shadow-lg p-[10px]"
-        >
-          <SiWhatsapp className="text-blue1" />
-        </div>
-        <div
-          className="bg-white/30 flex items-center 
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+          >
+            <FaFacebookF className="text-blue1 text-xl" />
+          </div>
+        </a>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+          <div
+            className="bg-white/30 flex items-center justify-center
         backdrop-blur-sm  border-[3px] rounded-full 
-        border-blue1/30 shadow-lg p-[10px]"
-        >
-          <SiSkypeforbusiness className="text-blue1" />
-        </div>
-
-        <div
-          className="bg-white/30 flex items-center 
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+          >
+            <SiWhatsapp className="text-blue1 text-xl" />
+          </div>
+        </a>
+        <a href="mailto:youremail@example.com">
+          <div
+            className="bg-white/30 flex items-center justify-center
         backdrop-blur-sm  border-[3px] rounded-full 
-        border-blue1/30 shadow-lg p-[10px]"
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+          >
+            <MdOutlineMail className="text-blue1 text-xl" />
+          </div>
+        </a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <GrInstagram className="text-blue1" />
-        </div>
+          <div
+            className="bg-white/30 flex items-center justify-center
+        backdrop-blur-sm  border-[3px] rounded-full 
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+          >
+            <GrInstagram className="text-blue1 text-xl" />
+          </div>
+        </a>
       </div>
     </div>
   );

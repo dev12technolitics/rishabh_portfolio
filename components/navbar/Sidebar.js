@@ -4,8 +4,9 @@ import { FaDownload, FaFacebookF } from "react-icons/fa";
 import { GiTireIronCross } from "react-icons/gi";
 import { GrInstagram } from "react-icons/gr";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlineMail } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
-import { SiSkypeforbusiness, SiWhatsapp } from "react-icons/si";
+import { SiWhatsapp } from "react-icons/si";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -126,7 +127,7 @@ const Sidebar = () => {
               className="flex flex-col items-center
              justify-center"
             >
-              <h2 className="middle_hedding">Follow Me</h2>
+              <h2 className="middle_hedding mb-3">Follow Me</h2>
 
               <div className="relative flex w-full items-center justify-center gap-x-2">
                 <div
@@ -138,36 +139,54 @@ const Sidebar = () => {
                   w-full"
                 />
 
-                <div
-                  className="bg-white/30 flex items-center 
-                  backdrop-blur-sm  border-[3px] rounded-full 
-                  border-blue1 shadow-lg p-[10px]"
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <FaFacebookF className="text-blue1" />
-                </div>
-
-                <div
-                  className="bg-white/30 flex items-center 
-                  backdrop-blur-sm  border-[3px] rounded-full 
-                  border-blue1 shadow-lg p-[10px]"
+                  <div
+                    className="bg-white/30 flex items-center justify-center
+        backdrop-blur-sm  border-[3px] rounded-full 
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+                  >
+                    <FaFacebookF className="text-blue1 text-xl" />
+                  </div>
+                </a>
+                <a
+                  href="https://wa.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <SiWhatsapp className="text-blue1" />
-                </div>
-                <div
-                  className="bg-white/30 flex items-center 
-                  backdrop-blur-sm  border-[3px] rounded-full 
-                  border-blue1 shadow-lg p-[10px]"
+                  <div
+                    className="bg-white/30 flex items-center justify-center
+        backdrop-blur-sm  border-[3px] rounded-full 
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+                  >
+                    <SiWhatsapp className="text-blue1 text-xl" />
+                  </div>
+                </a>
+                <a href="mailto:youremail@example.com">
+                  <div
+                    className="bg-white/30 flex items-center justify-center
+        backdrop-blur-sm  border-[3px] rounded-full 
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+                  >
+                    <MdOutlineMail className="text-blue1 text-xl" />
+                  </div>
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <SiSkypeforbusiness className="text-blue1" />
-                </div>
-
-                <div
-                  className="bg-white/30 flex items-center 
-                  backdrop-blur-sm  border-[3px] rounded-full 
-                  border-blue1 shadow-lg p-[10px]"
-                >
-                  <GrInstagram className="text-blue1" />
-                </div>
+                  <div
+                    className="bg-white/30 flex items-center justify-center
+        backdrop-blur-sm  border-[3px] rounded-full 
+        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
+                  >
+                    <GrInstagram className="text-blue1 text-xl" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

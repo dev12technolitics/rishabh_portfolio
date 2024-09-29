@@ -1,0 +1,62 @@
+ .nav_link {
+    color: #ffff;
+    font-size: 17px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    text-transform: uppercase;
+ }
+
+ .nav_link_sm {
+    color: #ffff;
+    font-size: 18px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    /* letter-spacing: 1px; */
+ }
+
+ .btn_home {
+   color: #ffff;
+   font-size: 18px;
+   font-family: "Merriweather", serif;
+   font-style: normal;
+   text-transform: capitalize;
+   word-spacing: 2px;
+   width: fit-content;
+   /* letter-spacing: 1px; */
+}
+.headding{
+   color: #ffff;
+   font-size: 45px;
+   font-family: "Merriweather", serif;
+   font-style: normal;
+   text-transform: capitalize;
+   word-spacing: 2px;
+}
+
+.paragraph{
+   color: #101626;
+   font-size: 18px;
+   font-family: "Merriweather", serif;
+   font-style: normal;
+   text-transform: capitalize;
+   word-spacing: 2px;
+   width: fit-content;
+}
+
+
+ .li_nav {
+    display: flex;
+    align-items: center;
+ }
+
+ .middle_hedding {
+    color: #ffff;
+    font-size: 19px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+ }
+

@@ -61,6 +61,14 @@
    word-spacing: 2px;
    width: fit-content;
  }
+ .cv_exp_text{
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+ font-style: normal;
+ text-transform: capitalize;
+ word-spacing: 2px;
+ width: fit-content;
+ }
 
 
  .li_nav {
@@ -190,6 +198,13 @@
    border-top: 3px solid #ffffffbd;
    border-right: 3px solid #ffffffbd;
    border-bottom: 3px solid #ffffffbd;
+   transition: all 0.5s;
+   cursor: pointer;
+ }
+
+ .glass_home{
+  transition: all 0.5s;
+   cursor: pointer;
  }
 
  .info-list ul {
@@ -221,4 +236,90 @@
    font-style: normal;
    text-transform: capitalize;
    word-spacing: 2px;
+}
+
+.cv_exp_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffffffbd;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.03) 95.42%); */
+  /* border: 1px solid transparent; */
+  /* backdrop-filter: blur(3.5px); */
+  
+  transition: all 0.5s;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.cv_exp_box:hover::before {
+  transform: scale(1.0);
+  border-radius: 0.75rem;
+}
+.cv_exp_box::before {
+  background: linear-gradient(180deg, #68e0cf1c, #68e0cf54);
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.5s;
+  transform-origin: top left;
+}
+
+.cv_exp_box .cv_exp_com {
+  display: flex;
+  align-items: center;
+  gap: 10px 20px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.glass_box:hover::before {
+  transform: scale(1.0);
+  border-radius: 0.75rem;
+}
+.glass_box::before {
+  background: linear-gradient(180deg, #1016261a, #10162659);
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.5s;
+  transform-origin: top left;
+}
+
+.glass_home:hover::before {
+  transform: scale(1.0);
+  border-radius: 0.75rem;
+}
+.glass_home::before {
+  background: linear-gradient(180deg, #1016261a, #10162659);
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.5s;
+  transform-origin: top left;
+}
+
+.padding_cv_exp{
+  padding-left: 3rem;
+}
+
+.whatdo_padding{
+  padding-right: 3rem;
 }

@@ -151,9 +151,9 @@ const HomePage = () => {
                 </div>
 
                 <div
-                  className="bg-white/10 flex items-center 
-                  backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/80
-                   border-white/30 shadow-lg p-[20px] my-6 relative z-10"
+                  className="bg-blue1/20 flex items-center 
+                  backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/95
+                   border-white/30 shadow-lg p-[20px] mt-6 relative z-10 glass_home"
                 >
                   Experienced web developer and trainer with passion for
                   creating attractive and interactive websites meeting customer

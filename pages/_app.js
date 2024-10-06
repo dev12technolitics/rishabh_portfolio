@@ -8,9 +8,31 @@ import "../styles/globals.css";
 // xl:h-screen xl:overflow-hidden
 function MyApp({ Component, pageProps }) {
   return (
-    <section
+    <>
+      <section className="relative h-screen overflow-hidden bg-gradient-to-b from-cyan1 to-blue1">
+        <div
+          className="absolute left-0 bottom-0 h-full w-2/4 opacity-20"
+          style={{
+            backgroundImage: `url(${bgImage.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
+
+        <div className="relative z-10 flex flex-col h-full">
+          <div className="flex-1 overflow-y-auto">
+            <Sidebar />
+
+            <Component {...pageProps} />
+
+            <Footer />
+          </div>
+        </div>
+      </section>
+
+      {/* <section
       className="h-full
-     bg-gradient-to-b from-cyan1 to-blue1 "
+     bg-gradient-to-b from-cyan1 to-blue1 f"
     >
       <div
         className="absolute left-0 bottom-0 h-full w-2/4 opacity-20"
@@ -23,7 +45,8 @@ function MyApp({ Component, pageProps }) {
       <Sidebar />
       <Component {...pageProps} />
       <Footer />
-    </section>
+    </section> */}
+    </>
   );
 }
 

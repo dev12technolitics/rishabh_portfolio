@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <div
       className="flex flex-col items-center
-   justify-center lg:mt-[55px] mt-[20px] pb-[20px]"
+   justify-center lg:mt-[80px] mt-[40px] pb-[20px]"
     >
       <div className="relative flex w-full items-center justify-center gap-x-2">
         <div

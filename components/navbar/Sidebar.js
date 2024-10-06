@@ -26,6 +26,10 @@ const Sidebar = () => {
     GrInstagram: <GrInstagram className="text-blue1 text-xl" />,
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <div className="container">
@@ -115,6 +119,7 @@ const Sidebar = () => {
                   key={element?.name}
                   href={element?.link}
                   className="no-underline nav_link_sm"
+                  onClick={handleLinkClick}
                 >
                   {element?.name}
                 </Link>

@@ -1,9 +1,12 @@
 import Image from "next/image";
 import YEARSOFEXPERIENCE from "../../assets/YEARSOFEXPERIENCE.png";
 import circaldot from "../../assets/circal_dot.png";
+
 import rishabh from "../../assets/rishabh.png";
 import square from "../../assets/xyz.png";
 import ExperienceCarousel from "../../components/About/ExperienceCarousel";
+import experienceData from "../../data/experienceData";
+import whatdoData from "../../data/whatdoData";
 
 const About = () => {
   return (
@@ -85,7 +88,8 @@ const About = () => {
                 />
               </div>
               <div
-                className="bg-blue1/20 flex flex-col justify-center 
+                className="bg-blue1/20 
+                flex flex-col justify-center 
                             backdrop-blur-sm
                               glass_box 
                               shadow-lg p-[20px] relative z-10"
@@ -102,7 +106,7 @@ const About = () => {
             </div>
 
             <div
-              className="p-[20px] w-full flex justify-center xl:justify-start
+              className="pt-[20px] px-[20px] w-full flex justify-center xl:justify-start
             lg:justify-start"
             >
               <div
@@ -116,7 +120,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 w-full">
+        <div className="grid grid-cols-12 w-full lg:mt-[80px] mt-[40px]">
           <div
             className="col-span-12 lg:col-span-4 gap-4
           m-0 p-0 w-full flex flex-col justify-center
@@ -138,6 +142,96 @@ const About = () => {
             <div className="">
               <ExperienceCarousel />
             </div>
+          </div>
+
+          <div
+            className="col-span-12 lg:col-span-8 gap-4
+          w-full flex flex-col justify-center padding_cv_exp "
+          >
+            {experienceData.map((experience) => (
+              <div
+                className="cv_exp_box rounded-xl backdrop-blur-sm bg-blue1/20 
+                 px-[30px] py-[20px]"
+                key={experience.id}
+              >
+                <h3 className="headding_three text-white/95">
+                  0{experience.id}
+                </h3>
+
+                <div className="cv_exp_com">
+                  <span className="">
+                    <p className="cv_exp_text text-white/95">
+                      {experience.designation}
+                    </p>
+                    <p className="cv_exp_text text-cyan1">
+                      {experience.company}
+                    </p>
+                  </span>
+                  <p className="cv_exp_text m-0 p-0 text-white/95">
+                    ({experience.start_date} - {experience.end_date})
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-12 w-full lg:mt-[80px] mt-[40px]">
+          <div
+            className="col-span-12 lg:col-span-8 gap-4
+          w-full flex justify-center whatdo_padding"
+          >
+            <div
+              className="grid grid-cols-12 w-full gap-4 
+              order-2 lg:order-1 xl:order-1"
+            >
+              {whatdoData.map((experience) => (
+                <div className="col-span-12 md:col-span-6">
+                  <div
+                    className="bg-blue1/20 flex  flex-col items-center 
+                  backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/95
+                   border-white/50 shadow-lg p-[20px] relative z-10 glass_home"
+                  >
+                    <div className="w-1/5">
+                      <Image
+                        src={experience.img}
+                        alt="image"
+                        width={500}
+                        height={300}
+                        className="object-cover"
+                      />
+                    </div>
+
+                    <h3 className="headding_three text-cyan1 mb-3">
+                      {experience?.title}
+                    </h3>
+                    <p className="paragraph text-center text-white/95">
+                      {experience?.paragraph}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div
+            className="col-span-12 lg:col-span-4 gap-4
+           p-0 w-full flex flex-col justify-center
+          order-1 lg:order-2 xl:order-2 my-[20px]"
+          >
+            <div
+              className="flex items-center flex-col lg:flex-row xl:flex-row
+            justify-center lg:justify-start xl:justify-start gap-2 "
+            >
+              <h2 className="headding_two ">What I Do</h2>
+              <div className="bg-gradient-to-r from-white/70 to-blue1/70 h-1 w-14 rounded-xl" />
+            </div>
+
+            <p className="paragraph text-white/95">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-// components/AnimatedText.js
 import { useEffect, useState } from "react";
 
 const AnimatedText = ({
@@ -11,7 +10,7 @@ const AnimatedText = ({
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    if (texts.length === 0) return; // Avoid processing if the texts array is empty
+    if (texts.length === 0) return; 
 
     const currentText = texts[index];
     const isComplete = displayedText === currentText;
@@ -20,7 +19,7 @@ const AnimatedText = ({
 
     if (isDeleting) {
       if (isComplete) {
-        timeoutId = setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+        timeoutId = setTimeout(() => setIsDeleting(true), 1000); 
       }
 
       timeoutId = setTimeout(() => {

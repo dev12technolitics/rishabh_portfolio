@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import linedot from "../../assets/bnr-line.png";
 import circaldot from "../../assets/circal_dot.png";
 import dubblestar from "../../assets/dubblestar.png";
 import starone from "../../assets/half-star.png";
@@ -18,11 +19,11 @@ const texts = [
 const HomePage = () => {
   return (
     <>
-      <div className="container mt-[80px] w-full flex items-center justify-center">
-        <div className="grid grid-cols-12 gap-4 w-full relative">
+      <div className="container mt-[80px]">
+        <div className="grid grid-cols-12 gap-4 relative">
           <div
-            className="absolute h-12 w-12 opacity-35 star-animation
-          xl:top-[-80px] lg:top-[-80px] sm:top-[-80px] md:top-[0px] top-[-80px]
+            className="absolute h-14 w-14 star-animation
+            xl:top-[-80px] lg:top-[-80px] sm:top-[-80px] md:top-[0px] top-[-80px]
            sm:left-[-20px] left-0 "
           >
             <Image
@@ -36,21 +37,25 @@ const HomePage = () => {
 
           <div
             className="col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-5 
-           flex items-center lg:justify-start xl:justify-start justify-center"
+           flex items-center justify-center relative"
           >
             <div
               className="bg-gradient-to-b from-white to-blue1/20 
-            p-[3px] flex items-center justify-center rounded-xl relative"
+            p-[3px] rounded-xl"
             >
-              {/* <div className="absolute right-[-20px] h-1/3 w-1/3">
+              <div
+                className="absolute
+               top-[-7px] arrow-animation 
+               right-[-20px] z-10 w-1/5 h-1/5 hidden lg:block"
+              >
                 <Image
-                  src={curly}
+                  src={linedot}
                   alt="image"
                   width={500}
                   height={300}
                   className="rounded-xl"
                 />
-              </div> */}
+              </div>
 
               <div className="image-container rounded-xl">
                 <Image
@@ -58,7 +63,7 @@ const HomePage = () => {
                   alt="image"
                   width={500}
                   height={300}
-                  className="rounded-xl image-hover  object-cover"
+                  className="rounded-xl image-hover object-cover"
                 />
               </div>
             </div>
@@ -83,7 +88,7 @@ const HomePage = () => {
               <div className="relative w-full">
                 <div
                   className="absolute circular-animation
-                  top-0 right-0 w-20 h-20 z-0 opacity-50"
+                  top-0 right-0 w-20 h-20 z-0 "
                 >
                   <Image
                     src={multistar}
@@ -97,17 +102,17 @@ const HomePage = () => {
                 <div className="py-4 ">
                   <h1
                     className="headding mb-0 flex 
-                  xl:justify-start
-                  lg:justify-start
-                  justify-center
-                 "
+                     xl:justify-start
+                     lg:justify-start
+                     justify-center
+                    "
                   >
                     Hello!{" "}
                     <div className="h-14 w-14 px-2 flex items-center justify-center">
                       {" "}
                       <Image
                         src={hii}
-                        alt="Description of image"
+                        alt="image"
                         width={500}
                         height={300}
                         className="hello-hand"
@@ -146,9 +151,9 @@ const HomePage = () => {
                 </div>
 
                 <div
-                  className="bg-white/20 flex items-center 
-                  backdrop-blur-sm  border-[3px] rounded-xl paragraph
-                  border-blue1/50 shadow-lg p-[20px] my-6 relative z-10"
+                  className="bg-white/10 flex items-center 
+                  backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/80
+                   border-white/30 shadow-lg p-[20px] my-6 relative z-10"
                 >
                   Experienced web developer and trainer with passion for
                   creating attractive and interactive websites meeting customer

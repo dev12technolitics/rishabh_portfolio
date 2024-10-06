@@ -1,4 +1,9 @@
 @media only screen and (max-width: 1023px) {
+    .glass_box {
+        border-radius: 0.75rem;
+        border: 3px solid #ffffffbd;
+      }
+      .headding_three,
     .paragraph{
         text-align: center;
     }
@@ -18,7 +23,7 @@
 
 @media only screen and (min-width: 1280px) {
     .content_box {
-        padding: 0px 0px 0px 60px !important;
+        padding: 0px 0px 0px 30px !important;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -34,5 +39,11 @@
     .animated_sm{
         text-align: center !important;
         height: 6rem !important;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1220px!important;
     }
 }

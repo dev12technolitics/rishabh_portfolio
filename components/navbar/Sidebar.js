@@ -1,15 +1,30 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { FaDownload, FaFacebookF } from "react-icons/fa";
 import { GiTireIronCross } from "react-icons/gi";
 import { GrInstagram } from "react-icons/gr";
-import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
 import { SiWhatsapp } from "react-icons/si";
+import linkNav from "../../data/linksNav";
+import socialMediaData from "../../data/socialMediaData";
 
 const Sidebar = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [socialMedia, setSocialMedia] = useState([]);
+
+  useEffect(() => {
+    setSocialMedia(socialMediaData);
+  }, []);
+
+  const iconMap = {
+    FaFacebookF: <FaFacebookF className="text-blue1 text-xl" />,
+    SiWhatsapp: <SiWhatsapp className="text-blue1 text-xl" />,
+    MdOutlineMail: <MdOutlineMail className="text-blue1 text-xl" />,
+    GrInstagram: <GrInstagram className="text-blue1 text-xl" />,
+  };
 
   return (
     <>
@@ -22,47 +37,46 @@ const Sidebar = () => {
           <div
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden nav_link cursor-pointer 
-            bg-white/30 flex items-center justify-center
+            bg-blue1/30 flex items-center justify-center
             backdrop-blur-md  border-[3px] rounded-full h-12 w-12
-            border-white/20 shadow-lg "
+            border-white/80 shadow-lg "
           >
-            <RiMenu4Fill />
+            <RiMenu4Fill className="text-2xl text-white" />
           </div>
 
           <div
-            className="bg-white/30 hidden md:flex items-center 
+            className="bg-blue1/30 hidden md:flex items-center 
            backdrop-blur-md  border-[3px] rounded-full 
-            border-white/20 shadow-lg py-[10px] px-[2rem]"
+            border-white/50 shadow-lg py-[10px] px-[2rem]"
           >
             <ul
               className="hidden md:flex items-center justify-center 
-            m-0 list-none p-0 gap-x-10"
+            m-0 list-none p-0 gap-x-4"
             >
-              <Link href="/about" className="no-underline nav_link">
-                <li className="li_nav gap-x-[5px]">
-                  Home
-                  <IoIosArrowDown />
-                </li>
-              </Link>
+              {linkNav.map((element) => (
+                <Link
+                  key={element?.name}
+                  href={element?.link}
+                  className={`no-underline nav_link_sm uppercase py-1 px-3   
+                  ${
+                    router.pathname === element?.link
+                      ? "bg-blue1/40 border-[2px] border-white/50 nav_link_sm py-1 px-3  rounded-full"
+                      : ""
+                  }`}
+                >
+                  {element?.name}
+                </Link>
+              ))}
 
-              <Link href="/about" className="no-underline nav_link">
-                <li>about</li>
-              </Link>
-
-              <Link href="/resume" className="no-underline nav_link">
-                <li>resume</li>
-              </Link>
-
-              <Link href="/contact" className="no-underline nav_link">
-                <li>contact</li>
-              </Link>
-
-              <Link href="/contact" className="no-underline nav_link">
-                <li className="li_nav gap-x-[5px]">
-                  download cv
-                  <FaDownload />
-                </li>
-              </Link>
+              <a
+                href="/cv.pdf"
+                download
+                className="no-underline nav_link_sm li_nav uppercase gap-x-[5px] py-1 px-3 
+               hover:bg-blue1/40 hover:border-[2px] hover:border-white/50 rounded-full"
+              >
+                Download CV
+                <FaDownload />
+              </a>
             </ul>
           </div>
         </div>
@@ -96,31 +110,22 @@ const Sidebar = () => {
             </div>
 
             <ul className="flex flex-col items-start justify-start m-0 list-none py-20 px-2 gap-y-3">
-              <Link href="/about" className="no-underline nav_link_sm">
+              {linkNav.map((element) => (
+                <Link
+                  key={element?.name}
+                  href={element?.link}
+                  className="no-underline nav_link_sm"
+                >
+                  {element?.name}
+                </Link>
+              ))}
+
+              <a href="/cv.pdf" download className="no-underline nav_link">
                 <li className="li_nav gap-x-[5px]">
-                  Home
-                  <IoIosArrowDown />
-                </li>
-              </Link>
-
-              <Link href="/about" className="no-underline nav_link_sm">
-                <li>about</li>
-              </Link>
-
-              <Link href="/resume" className="no-underline nav_link_sm">
-                <li>resume</li>
-              </Link>
-
-              <Link href="/contact" className="no-underline nav_link_sm">
-                <li>contact</li>
-              </Link>
-
-              <Link href="/contact" className="no-underline nav_link_sm">
-                <li className="li_nav gap-x-[5px]">
-                  download cv
+                  Download CV
                   <FaDownload />
                 </li>
-              </Link>
+              </a>
             </ul>
 
             <div
@@ -139,54 +144,22 @@ const Sidebar = () => {
                   w-full"
                 />
 
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    className="bg-white/30 flex items-center justify-center
+                {socialMedia.map((media) => (
+                  <a
+                    key={media?.name}
+                    href={media?.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div
+                      className="bg-white/30 flex items-center justify-center
         backdrop-blur-sm  border-[3px] rounded-full 
         border-blue1/30 shadow-lg p-[10px] h-12 w-12"
-                  >
-                    <FaFacebookF className="text-blue1 text-xl" />
-                  </div>
-                </a>
-                <a
-                  href="https://wa.me"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    className="bg-white/30 flex items-center justify-center
-        backdrop-blur-sm  border-[3px] rounded-full 
-        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
-                  >
-                    <SiWhatsapp className="text-blue1 text-xl" />
-                  </div>
-                </a>
-                <a href="mailto:youremail@example.com">
-                  <div
-                    className="bg-white/30 flex items-center justify-center
-        backdrop-blur-sm  border-[3px] rounded-full 
-        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
-                  >
-                    <MdOutlineMail className="text-blue1 text-xl" />
-                  </div>
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    className="bg-white/30 flex items-center justify-center
-        backdrop-blur-sm  border-[3px] rounded-full 
-        border-blue1/30 shadow-lg p-[10px] h-12 w-12"
-                  >
-                    <GrInstagram className="text-blue1 text-xl" />
-                  </div>
-                </a>
+                    >
+                      {iconMap[media?.icon]}
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
           </div>

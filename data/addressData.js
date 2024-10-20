@@ -20,7 +20,7 @@ const addressData = [
   {
     id: 3,
     title: "Address",
-    paragraph: "Village mahudar Tehsil Amarpatan District Satna Madhya Pradesh",
+    paragraph: "Village mahudar District Satna M.P.",
     img: Address.src,
     link: "https://www.google.com/maps?q=Village+Mahudar,+Tehsil+Amarpatan,+District+Satna,+Madhya+Pradesh",
   },

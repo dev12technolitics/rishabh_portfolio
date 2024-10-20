@@ -27,3 +27,14 @@ body {
     background: #e5e7eb; /* Color of the track */
     border-radius: 10px; /* Rounded corners */
   }
+
+
+  .Toastify__toast {
+    background-color: #101626ba !important;
+    border: 2px solid rgba(255, 255, 255, 0.889) !important;
+    font-family: "Roboto Slab", serif!important;
+    font-style: normal!important;
+    text-transform: capitalize !important;
+    border-radius: 0.75rem !important;
+    --tw-backdrop-blur: blur(4px)!important;
+  }

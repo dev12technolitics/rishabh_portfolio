@@ -1,10 +1,13 @@
 import Image from "next/image";
 import addressData from "../../data/addressData";
+import { ContactFrom } from "../../components/contact";
+import rishabhdata from "../../data/rishabhdata";
 
 const Contact = () => {
   return (
     <>
-      <div className="container mt-[80px]">
+      <div className="container mt-[80px] ">
+
         <div className="grid grid-cols-12 w-full">
           <div className="col-span-12 lg:col-span-7 flex items-center justify-end relative whatdo_padding">
             <div
@@ -28,8 +31,8 @@ const Contact = () => {
           </div>
 
           <div
-            className="col-span-12 lg:col-span-5 m-0 p-0 w-full
-          flex flex-col justify-center gap-2"
+            className="col-span-12 lg:col-span-5 p-0 w-full
+          flex flex-col justify-center gap-2 content_margintop"
           >
             <div
               className="flex items-center flex-col lg:flex-row xl:flex-row
@@ -47,62 +50,84 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 w-ful lg:mt-[80px] mt-[40px] gap-4">
+        <div className="grid grid-cols-12 mt-[80px] gap-4">
           {addressData.map(({ id, title, paragraph, img, link }) => (
             <div
-              key={id} // Moved key to the correct element
-              className="col-span-12 lg:col-span-4 md:col-span-6 bg-blue1/10 
+              key={id}
+              className="col-span-12 lg:col-span-4 md:col-span-6 bg-blue1/40
               flex items-center justify-center 
               backdrop-blur-sm border-[3px] rounded-xl text-white/95
-              border-white/30 shadow-lg p-[20px] relative z-10 glass_home"
+              border-white/50 shadow-lg p-[20px] relative z-10 glass_home"
             >
-              <div className="w-[25%]">
-                <Image
-                  src={img}
-                  alt={title}
-                  width={500}
-                  height={300}
-                  className=""
-                />
-              </div>
+              <div className="grid grid-cols-12 gap-4">
 
-              <div className="ml-6 w-[75%]">
-                <h3 className="headding_three mb-2 text-cyan1">{title}</h3>
-                <a
-                  href={link}
-                  className="no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p className="paragraph text-white/95">{paragraph}</p>
-                </a>
+                <div className="col-span-12 lg:col-span-3 w-full m-0 p-0 flex items-center justify-center ">
+                  <div className="w-[100px]">
+                    <Image
+                      src={img}
+                      alt={title}
+                      width={500}
+                      height={300}
+                      className=" w-full "
+                    />
+                  </div>
+                </div>
+
+                <div className="col-span-12 lg:col-span-9 w-full m-0 p-0">
+                  <h3 className="headding_three mb-2 text-cyan1 left_center_text
+                  ">{title}</h3>
+                  <a
+                    href={link}
+                    className="no-underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="text-white/95 left_center_paragraph w-auto">{paragraph}</p>
+                  </a>
+                </div>
+
               </div>
             </div>
           ))}
         </div>
 
-        <div className="grid grid-cols-12 w-full lg:mt-[80px] mt-[40px]">
+        <div className="grid grid-cols-12 w-full mt-[80px]">
+
           <div
-            className="col-span-12 lg:col-span-5 
-          flex items-center justify-end relative whatdo_padding"
+            className="col-span-12 lg:col-span-4"
           >
-            <div
-              className="bg-blue1/20 flex items-center 
-                  backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/95
-                   border-white/30 shadow-lg p-[20px] mt-6 relative z-10 glass_home"
+
+            <h1
+              className="headding mb-0 flex 
+                     xl:justify-start
+                     lg:justify-start
+                     justify-center
+                    "
             >
-              Experienced web developer and trainer with passion for creating
-              attractive and interactive websites meeting customer needs and
-              exceeding expectations. Well-versed in developing React js and
-              Next.js based websites. Excels in HTML, CSS, and JavaScript
-              development.
+              rishabh tiwari
+            </h1>
+
+            <h3 className="headding_three mb-2 text-cyan1">frontend developer</h3>
+
+            <div class="info-list mt-6 padding_right_li">
+              <ul className="pt-[20px] ">
+
+                {rishabhdata.map(({ id, title, paragraph }) => (
+                  <li className="text-white/95 " key={id} >
+                    <strong className="text-cyan1">{title} :</strong> {paragraph}
+                  </li>
+                ))}
+              </ul>
             </div>
+
           </div>
 
           <div
-            className="col-span-12 lg:col-span-7 m-0 p-0 w-full
-          flex flex-col justify-center gap-2"
-          ></div>
+            className="col-span-12 lg:col-span-8 p-0 w-full
+          flex flex-col justify-center gap-2 content_margintop"
+          >
+            <ContactFrom />
+          </div>
         </div>
       </div>
     </>

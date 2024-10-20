@@ -49,9 +49,9 @@ const Sidebar = () => {
           </div>
 
           <div
-            className="bg-blue1/30 hidden md:flex items-center 
+            className="bg-blue1/50 hidden md:flex items-center 
            backdrop-blur-md  border-[3px] rounded-full 
-            border-white/50 shadow-lg py-[10px] px-[2rem]"
+            border-white/50 shadow-lg py-[8px] px-[2rem]"
           >
             <ul
               className="hidden md:flex items-center justify-center 
@@ -61,10 +61,10 @@ const Sidebar = () => {
                 <Link
                   key={element?.name}
                   href={element?.link}
-                  className={`no-underline nav_link_sm uppercase py-1 px-3   
+                  className={`no-underline nav_link_sm uppercase py-0 px-3   
                   ${
                     router.pathname === element?.link
-                      ? "bg-blue1/40 border-[2px] border-white/50 nav_link_sm py-1 px-3  rounded-full"
+                      ? "bg-cyan1/20 border-[2px] border-white/50 nav_link_sm  rounded-full"
                       : ""
                   }`}
                 >

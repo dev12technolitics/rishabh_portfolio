@@ -4,6 +4,8 @@ import bgImage from "../assets/bgimg.png";
 import Footer from "../components/Footer/Footer";
 import { Sidebar } from "../components/navbar";
 import "../styles/globals.css";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // xl:h-screen xl:overflow-hidden
 function MyApp({ Component, pageProps }) {
@@ -24,7 +26,16 @@ function MyApp({ Component, pageProps }) {
             <Sidebar />
 
             <Component {...pageProps} />
-
+            <ToastContainer
+              position="top-right"
+              autoClose={5000} 
+              hideProgressBar={false} 
+              closeOnClick
+              pauseOnHover
+              draggable
+              pauseOnFocusLoss
+              theme="colored" 
+            />
             <Footer />
           </div>
         </div>

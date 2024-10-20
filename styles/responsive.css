@@ -1,31 +1,52 @@
-@media only screen and (max-width: 1023px) {
-    .glass_box {
-        border-radius: 0.75rem;
-        border: 3px solid #ffffffbd;
-      }
-      .headding_three,
-    .paragraph{
-        text-align: center;
-    }
-    .animated_sm{
-        text-align: center !important;
-    }
-    .padding_cv_exp{
-        padding-left: 0rem;
-        padding-right: 0rem;
-        margin-top: 30px !important;
-    }
-
-    .whatdo_padding{
-        padding-right: 0rem;
+@media only screen and (max-width: 1279px) {
+    .Education_padding{
+        padding-right: 1rem;
       }
 }
 
+@media only screen and (max-width: 1023px) {
+    .Education_padding{
+        padding-right: 0rem;
+      }
+    .glass_box {
+        border-radius: 0.75rem;
+        border: 3px solid #ffffffbd;
+    }
+    .info-list ul li,
+    .left_center_paragraph,
+    .left_center_text,
+    .headding_three,
+    .paragraph {
+        text-align: center;
+    }
+
+    .animated_sm {
+        text-align: center !important;
+    }
+
+    .padding_cv_exp {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-top: 1.5rem !important
+    }
+
+    .whatdo_padding {
+        padding-right: 0rem;
+    }
+    .content_margintop{
+        margin-top: 1.5rem
+    }
+    .padding_right_li{
+        padding-right: 0px;
+    }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-    .right_absolute{
+    .right_absolute {
         right: 0px !important;
     }
-    .left_absolute{
+
+    .left_absolute {
         left: 0px !important;
     }
 }
@@ -35,17 +56,22 @@
         padding: 0px 0px 0px 30px !important;
     }
 }
-@media only screen and (max-width: 768px) {
-    .right_absolute{
+
+@media only screen and (max-width: 767px) {
+    .overlay{
+        display: none;
+    }
+    .right_absolute {
         right: 0px !important;
     }
-    .left_absolute{
+
+    .left_absolute {
         left: 0px !important;
     }
 }
 
 @media only screen and (max-width: 425px) {
-    .animated_sm{
+    .animated_sm {
         text-align: center !important;
         height: 6rem !important;
     }
@@ -53,6 +79,6 @@
 
 @media (min-width: 1536px) {
     .container {
-        max-width: 1220px!important;
+        max-width: 1220px !important;
     }
 }

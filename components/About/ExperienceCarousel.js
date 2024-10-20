@@ -62,7 +62,7 @@ const ExperienceCarousel = () => {
         <SwiperSlide key={item?.name}>
           <div className="flex flex-col items-center justify-center">
             <div
-              className="bg-blue1/40 flex items-center justify-center 
+              className="bg-blue1/50 flex items-center justify-center 
           backdrop-blur-sm border-3 rounded-full border-white/80 shadow-lg p-2 h-20 w-20"
             >
               <div className="w-4/6 flex flex-col items-center">

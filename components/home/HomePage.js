@@ -86,9 +86,10 @@ const HomePage = () => {
               </div>
 
               <div className="relative w-full">
+
                 <div
                   className="absolute circular-animation
-                  top-0 right-0 w-20 h-20 z-0 "
+                  top-0 right-0 w-20 h-20 z-0"
                 >
                   <Image
                     src={multistar}
@@ -99,7 +100,7 @@ const HomePage = () => {
                   />
                 </div>
 
-                <div className="py-4 ">
+                <div className="py-4 relative z-10">
                   <h1
                     className="headding mb-0 flex 
                      xl:justify-start
@@ -139,7 +140,7 @@ const HomePage = () => {
               <div className="relative">
                 <div
                   className="absolute right_absolute
-                 dot-animation top-0 right-[-28px] w-16 h-16 z-0"
+                 dot-animation top-0 right-[-11px] w-16 h-16 z-0"
                 >
                   <Image
                     src={dubblestar}

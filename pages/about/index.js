@@ -12,6 +12,7 @@ const About = () => {
   return (
     <>
       <div className="container mt-[80px]">
+
         <div className="grid grid-cols-12 w-full">
           <div
             className="col-span-12 lg:col-span-6 
@@ -67,17 +68,17 @@ const About = () => {
             <div
               className="flex items-center flex-col lg:flex-row xl:flex-row
             justify-center lg:justify-start xl:justify-start
-            p-[20px] 
+            px-[20px] pb-[1.5rem]
             gap-2"
             >
-              <h2 className="headding_two ">About Me</h2>
+              <h2 className="headding_two content_margintop">About Me</h2>
               <div className="bg-gradient-to-r from-white/70 to-blue1/70 h-1 w-14 rounded-xl" />
             </div>
 
             <div className="relative">
               <div
                 className="absolute right_absolute
-                 dot-animation top-0 right-[-28px] w-16 h-16 z-0"
+                 dot-animation top-0 right-[-11px] w-16 h-16 z-0"
               >
                 <Image
                   src={circaldot}
@@ -88,7 +89,7 @@ const About = () => {
                 />
               </div>
               <div
-                className="bg-blue1/20 
+                className="bg-blue1/40
                 flex flex-col justify-center 
                             backdrop-blur-sm
                               glass_box 
@@ -106,7 +107,7 @@ const About = () => {
             </div>
 
             <div
-              className="pt-[20px] px-[20px] w-full flex justify-center xl:justify-start
+              className="pt-[1.5rem] px-[20px] w-full flex justify-center xl:justify-start
             lg:justify-start"
             >
               <div
@@ -120,7 +121,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 w-full lg:mt-[80px] mt-[40px]">
+        <div className="grid grid-cols-12 w-full mt-[80px] ">
           <div
             className="col-span-12 lg:col-span-4 gap-4
           m-0 p-0 w-full flex flex-col justify-center
@@ -150,7 +151,7 @@ const About = () => {
           >
             {experienceData.map((experience) => (
               <div
-                className="cv_exp_box rounded-xl backdrop-blur-sm bg-blue1/20 
+                className="cv_exp_box rounded-xl backdrop-blur-sm bg-blue1/40 
                  px-[30px] py-[20px]"
                 key={experience.id}
               >
@@ -176,9 +177,9 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 w-full lg:mt-[80px] mt-[40px]">
+        <div className="grid grid-cols-12 w-full mt-[80px] ">
           <div
-            className="col-span-12 lg:col-span-8 gap-4
+            className="col-span-12 lg:col-span-8 
           w-full flex justify-center whatdo_padding"
           >
             <div
@@ -186,9 +187,9 @@ const About = () => {
               order-2 lg:order-1 xl:order-1"
             >
               {whatdoData.map((experience) => (
-                <div className="col-span-12 md:col-span-6">
+                <div className="col-span-12 md:col-span-6" key={experience.id}>
                   <div
-                    className="bg-blue1/20 flex  flex-col items-center 
+                    className="bg-blue1/40 flex  flex-col items-center 
                   backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/95
                    border-white/50 shadow-lg p-[20px] relative z-10 glass_home"
                   >
@@ -215,9 +216,9 @@ const About = () => {
           </div>
 
           <div
-            className="col-span-12 lg:col-span-4 gap-4
+            className="col-span-12 lg:col-span-4
            p-0 w-full flex flex-col justify-center
-          order-1 lg:order-2 xl:order-2 my-[20px]"
+          order-1 lg:order-2 xl:order-2 content_margintop"
           >
             <div
               className="flex items-center flex-col lg:flex-row xl:flex-row

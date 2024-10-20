@@ -1,241 +1,260 @@
- .nav_link {
-   color: #ffff;
-   font-size: 17px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: uppercase;
- }
-
- .nav_link_sm {
-   color: #ffff;
-   font-size: 18px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: capitalize;
-   word-spacing: 2px;
- }
-
- .btn_home {
-   color: #ffff;
-   font-size: 18px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: capitalize;
-   word-spacing: 2px;
-   width: fit-content;
-   /* letter-spacing: 1px; */
- }
-
- .headding {
-   color: #ffff;
-   font-size: 45px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: capitalize;
-   word-spacing: 2px;
- }
-
- .headding_two{
+.nav_link {
   color: #ffff;
-  font-size: 35px;
-   font-family: "Roboto Slab", serif;
+  font-size: 17px;
+  font-family: "Roboto Slab", serif;
   font-style: normal;
-  text-transform: capitalize;
-  word-spacing: 2px;
- }
+  text-transform: uppercase;
+}
 
- .headding_three{
+.nav_link_sm {
   color: #ffff;
-  font-size: 23px;
-   font-family: "Roboto Slab", serif;
-  font-style: normal;
-  text-transform: capitalize;
-  word-spacing: 2px;
- }
-
- .paragraph {
-   font-size: 18px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: capitalize;
-   word-spacing: 2px;
-   width: fit-content;
- }
- .cv_exp_text{
   font-size: 18px;
   font-family: "Roboto Slab", serif;
- font-style: normal;
- text-transform: capitalize;
- word-spacing: 2px;
- width: fit-content;
- }
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+
+.btn_home {
+  color: #ffff;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  width: fit-content;
+  /* letter-spacing: 1px; */
+}
+
+.headding {
+  color: #ffff;
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+
+.headding_two {
+  color: #ffff;
+  font-size: 35px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+
+.headding_three {
+  color: #ffff;
+  font-size: 23px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+
+.left_center_text {
+  color: #ffff;
+  font-size: 23px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  text-align: left;
+}
+
+.paragraph {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  /* text-transform: capitalize; */
+  word-spacing: 2px;
+  width: fit-content;
+}
+
+.padding_right_li {
+  padding-right: 20px;
+}
+
+.left_center_paragraph {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  width: fit-content;
+  text-align: left;
+}
+
+.cv_exp_text {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  width: fit-content;
+}
 
 
- .li_nav {
-   display: flex;
-   align-items: center;
- }
+.li_nav {
+  display: flex;
+  align-items: center;
+}
 
- .middle_hedding {
-   color: #ffff;
-   font-size: 19px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: uppercase;
-   /* letter-spacing: 1px; */
- }
-
-
- @keyframes zoomInOut {
-
-   0%,
-   100% {
-     transform: scale(1);
-   }
-
-   50% {
-     transform: scale(1.3);
-   }
- }
-
- .star-animation {
-   animation: zoomInOut 3s infinite ease-in-out;
-   /* Adjust duration and timing function as needed */
- }
-
- .arrow-animation {
-   animation: moveStar 5s infinite alternate;
- }
-
- @keyframes moveStar {
-   0% {
-     transform: translateX(0);
-   }
-
-   50% {
-     transform: translateX(40px);
-   }
-
-   100% {
-     transform: translateX(0);
-   }
- }
+.middle_hedding {
+  color: #ffff;
+  font-size: 19px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  /* letter-spacing: 1px; */
+}
 
 
+@keyframes zoomInOut {
 
- @keyframes helloHandAnimation {
-   0% {
-     transform: scale(1) rotate(0deg);
-   }
+  0%,
+  100% {
+    transform: scale(1);
+  }
 
-   50% {
-     transform: scale(1.1) rotate(10deg);
-   }
+  50% {
+    transform: scale(1.3);
+  }
+}
 
-   100% {
-     transform: scale(1) rotate(0deg);
-   }
- }
+.star-animation {
+  animation: zoomInOut 3s infinite ease-in-out;
+  /* Adjust duration and timing function as needed */
+}
 
- .hello-hand {
-   animation: helloHandAnimation 1s infinite;
- }
+.arrow-animation {
+  animation: moveStar 5s infinite alternate;
+}
 
- .image-container {
-   overflow: hidden;
- }
+@keyframes moveStar {
+  0% {
+    transform: translateX(0);
+  }
 
- .image-hover {
-   transition: transform 0.3s ease;
- }
+  50% {
+    transform: translateX(40px);
+  }
 
- .image-hover:hover {
-   transform: scale(1.1);
- }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 
 
- .dot-animation {
-   animation: dotmove 5s infinite alternate;
- }
+@keyframes helloHandAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
 
- @keyframes dotmove {
-   0% {
-     transform: translateY(0);
-   }
+  50% {
+    transform: scale(1.1) rotate(10deg);
+  }
 
-   50% {
-     transform: translateY(-20px);
-     /* Move up */
-   }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
 
-   100% {
-     transform: translateY(0);
-     /* Move back down */
-   }
- }
+.hello-hand {
+  animation: helloHandAnimation 1s infinite;
+}
 
+.image-container {
+  overflow: hidden;
+}
 
- @keyframes circularMotion {
-   0% {
-     transform: rotate(0deg) translateX(10px) rotate(0deg);
-   }
+.image-hover {
+  transition: transform 0.3s ease;
+}
 
-   100% {
-     transform: rotate(360deg) translateX(10px) rotate(-360deg);
-   }
- }
-
- .circular-animation {
-   animation: circularMotion 4s linear infinite;
-   position: absolute;
- }
+.image-hover:hover {
+  transform: scale(1.1);
+}
 
 
- .glass_box {
-   border-top-right-radius: 0.75rem;
-   border-bottom-right-radius: 0.75rem;
-   border-top: 3px solid #ffffffbd;
-   border-right: 3px solid #ffffffbd;
-   border-bottom: 3px solid #ffffffbd;
-   transition: all 0.5s;
-   cursor: pointer;
- }
 
- .glass_home{
+.dot-animation {
+  animation: dotmove 5s infinite alternate;
+}
+
+@keyframes dotmove {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* Move back down */
+  }
+}
+
+
+@keyframes circularMotion {
+  0% {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg);
+  }
+}
+
+.circular-animation {
+  animation: circularMotion 4s linear infinite;
+  position: absolute;
+}
+
+
+.glass_box {
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-top: 3px solid #ffffffbd;
+  border-right: 3px solid #ffffffbd;
+  border-bottom: 3px solid #ffffffbd;
   transition: all 0.5s;
-   cursor: pointer;
- }
+  cursor: pointer;
+}
 
- .info-list ul {
+.glass_home {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.info-list ul {
   list-style: none;
-  margin: 0 -20px;
   padding: 0;
   font-size: 0;
 }
 
 .info-list ul li {
-  margin: 0 0 6px 0;
-  padding: 0 20px;
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
+  margin: 0 0 8px 0;
   font-size: 18px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: capitalize;
-   word-spacing: 2px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
 }
 
 .info-list ul li strong {
-  display: inline-block;
   vertical-align: top;
   width: 90px;
   font-size: 18px;
-    font-family: "Roboto Slab", serif;
-   font-style: normal;
-   text-transform: capitalize;
-   word-spacing: 2px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
 }
 
 .cv_exp_box {
@@ -246,7 +265,7 @@
   /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.03) 95.42%); */
   /* border: 1px solid transparent; */
   /* backdrop-filter: blur(3.5px); */
-  
+
   transition: all 0.5s;
   cursor: pointer;
   gap: 20px;
@@ -256,6 +275,7 @@
   transform: scale(1.0);
   border-radius: 0.75rem;
 }
+
 .cv_exp_box::before {
   background: linear-gradient(180deg, #68e0cf1c, #68e0cf54);
   content: "";
@@ -284,8 +304,10 @@
   transform: scale(1.0);
   border-radius: 0.75rem;
 }
+
 .glass_box::before {
-  background: linear-gradient(180deg, #1016261a, #10162659);
+  /* background: linear-gradient(180deg, #1016261a, #10162659); */
+  background: linear-gradient(180deg, #68e0cf1c, #68e0cf54);
   content: "";
   width: 100%;
   position: absolute;
@@ -302,8 +324,10 @@
   transform: scale(1.0);
   border-radius: 0.75rem;
 }
+
 .glass_home::before {
-  background: linear-gradient(180deg, #1016261a, #10162659);
+  /* background: linear-gradient(180deg, #1016261a, #10162659); */
+  background: linear-gradient(180deg, #68e0cf1c, #68e0cf54);
   content: "";
   width: 100%;
   position: absolute;
@@ -316,16 +340,104 @@
   transform-origin: top left;
 }
 
-.padding_cv_exp{
+.padding_cv_exp {
   padding-left: 3rem;
 }
 
-.whatdo_padding{
+.whatdo_padding {
   padding-right: 3rem;
 }
 
 
-.cv_exp_com{
+.cv_exp_com {
   border-left: 2px solid #ffffff57;
   padding-left: 12px;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.input_lable {
+  color: #ffff;
+  font-size: 23px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+
+.input_box {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  width: fit-content;
+  transition: all 0.5s;
+}
+
+.input_box:focus {
+  outline: none;
+  border: 3px solid #101626d1;
+}
+
+/* .input_box:active {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+ font-style: normal;
+ text-transform: capitalize;
+ word-spacing: 2px;
+ width: fit-content;
+   transition: all 0.5s;
+   --tw-backdrop-blur: blur(4px);
+   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+   background-color: rgb(16 22 38 / 0.1);
+}  */
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+  background-color: rgba(16, 22, 38, 0.839); 
+  border-radius: 0.75rem;
+  margin: 20px;
+  transform: scale(1); 
+}
+.relative_box:hover .overlay {
+  opacity: 1;
+  transform: scale(1.1); 
+}
+
+.overlay_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Education_padding{
+  padding-right: 2rem;
 }

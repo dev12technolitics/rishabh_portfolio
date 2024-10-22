@@ -27,8 +27,6 @@ body {
     background: #e5e7eb; /* Color of the track */
     border-radius: 10px; /* Rounded corners */
   }
-
-
   .Toastify__toast {
     background-color: #101626ba !important;
     border: 2px solid rgba(255, 255, 255, 0.889) !important;

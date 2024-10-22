@@ -2,10 +2,16 @@ import Image from "next/image";
 import addressData from "../../data/addressData";
 import { ContactFrom } from "../../components/contact";
 import rishabhdata from "../../data/rishabhdata";
+import Head from "next/head";
 
 const Contact = () => {
   return (
     <>
+    <Head>
+        <title>Rishabh Tiwari | Front-End Developer Portfolio</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"></meta>
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon.ico.png" />
+      </Head>
       <div className="container mt-[80px] ">
 
         <div className="grid grid-cols-12 w-full">

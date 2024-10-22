@@ -34,7 +34,11 @@
         padding-right: 0rem;
     }
     .content_margintop{
-        margin-top: 1.5rem
+        margin-top: 1.5rem;
+    }
+
+    .content_marginbottom{
+        margin-bottom: 1.5rem;
     }
     .padding_right_li{
         padding-right: 0px;

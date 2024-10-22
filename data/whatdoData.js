@@ -4,18 +4,19 @@ import Development from "../assets/do-icon4.svg";
 const whatdoData = [
   {
     id: 1,
-    title: "Website Design",
+    title: "Web Development",
     paragraph:
-      "Embarrassing hidden in the middle of text. All the Ipsum generate on the are Internettend.",
-    img: webdesign.src,
+      "The process of building and maintaining websites and web applications for the internet or an intranet.",
+    img: Development.src,
   },
   {
     id: 2,
-    title: "Web Development",
+    title: "Website Design",
     paragraph:
-      "Embarrassing hidden in the middle of text. All the Ipsum generate on the are Internettend.",
-    img: Development.src,
+      "Website design is the process of creating a website's appearance, layout, and content.",
+    img: webdesign.src,
   },
+  
 ];
 
 export default whatdoData;

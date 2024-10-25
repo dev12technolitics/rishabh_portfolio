@@ -19,7 +19,7 @@ const CarouselProgress = () => {
           slidesPerView: 1,
         },
         640: {
-          slidesPerView: 3,
+          slidesPerView: 4,
         },
       }}
     >

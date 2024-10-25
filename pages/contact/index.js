@@ -1,19 +1,26 @@
-import Image from "next/image";
-import addressData from "../../data/addressData";
-import { ContactFrom } from "../../components/contact";
-import rishabhdata from "../../data/rishabhdata";
 import Head from "next/head";
+import Image from "next/image";
+import { ContactFrom } from "../../components/contact";
+import addressData from "../../data/addressData";
+import rishabhdata from "../../data/rishabhdata";
 
 const Contact = () => {
   return (
     <>
-    <Head>
+      <Head>
         <title>Rishabh Tiwari | Front-End Developer Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"></meta>
-        <link rel="icon" type="image/png" sizes="192x192" href="/favicon.ico.png" />
+        <meta
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport"
+        ></meta>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/favicon.ico.png"
+        />
       </Head>
       <div className="container mt-[80px] ">
-
         <div className="grid grid-cols-12 w-full">
           <div className="col-span-12 lg:col-span-7 flex items-center justify-end relative whatdo_padding">
             <div
@@ -49,9 +56,8 @@ const Contact = () => {
             </div>
 
             <p className="paragraph text-white/95">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              I’m always open to new ideas and collaborations. Let’s connect and
+              make great things happen
             </p>
           </div>
         </div>
@@ -66,7 +72,6 @@ const Contact = () => {
               border-white/50 shadow-lg p-[20px] relative z-10 glass_home"
             >
               <div className="grid grid-cols-12 gap-4">
-
                 <div className="col-span-12 lg:col-span-3 w-full m-0 p-0 flex items-center justify-center ">
                   <div className="w-[100px]">
                     <Image
@@ -80,29 +85,30 @@ const Contact = () => {
                 </div>
 
                 <div className="col-span-12 lg:col-span-9 w-full m-0 p-0">
-                  <h3 className="headding_three mb-2 text-cyan1 left_center_text
-                  ">{title}</h3>
+                  <h3
+                    className="headding_three mb-2 text-cyan1 left_center_text
+                  "
+                  >
+                    {title}
+                  </h3>
                   <a
                     href={link}
                     className="no-underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <p className="text-white/95 left_center_paragraph w-auto">{paragraph}</p>
+                    <p className="text-white/95 left_center_paragraph w-auto">
+                      {paragraph}
+                    </p>
                   </a>
                 </div>
-
               </div>
             </div>
           ))}
         </div>
 
         <div className="grid grid-cols-12 w-full mt-[80px]">
-
-          <div
-            className="col-span-12 lg:col-span-4"
-          >
-
+          <div className="col-span-12 lg:col-span-4">
             <h1
               className="headding mb-0 flex 
                      xl:justify-start
@@ -113,19 +119,20 @@ const Contact = () => {
               rishabh tiwari
             </h1>
 
-            <h3 className="headding_three mb-2 text-cyan1">frontend developer</h3>
+            <h3 className="headding_three mb-2 text-cyan1">
+              frontend developer
+            </h3>
 
             <div class="info-list mt-6 padding_right_li">
               <ul className="pt-[20px] ">
-
                 {rishabhdata.map(({ id, title, paragraph }) => (
-                  <li className="text-white/95 " key={id} >
-                    <strong className="text-cyan1">{title} :</strong> {paragraph}
+                  <li className="text-white/95 " key={id}>
+                    <strong className="text-cyan1">{title} :</strong>{" "}
+                    {paragraph}
                   </li>
                 ))}
               </ul>
             </div>
-
           </div>
 
           <div

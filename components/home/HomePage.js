@@ -86,7 +86,6 @@ const HomePage = () => {
               </div>
 
               <div className="relative w-full">
-
                 <div
                   className="absolute circular-animation
                   top-0 right-0 w-20 h-20 z-0"
@@ -156,11 +155,11 @@ const HomePage = () => {
                   backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/95
                    border-white/30 shadow-lg p-[20px] mt-6 relative z-10 glass_home"
                 >
-                  Experienced web developer and trainer with passion for
-                  creating attractive and interactive websites meeting customer
-                  needs and exceeding expectations. Well-versed in developing
-                  React js and Next.js based websites. Excels in HTML, CSS, and
-                  JavaScript development.
+                  Passionate web developer skilled in React.js, Next.js, HTML,
+                  CSS, and JavaScript. Experienced in creating responsive,
+                  user-centric websites and delivering tailored solutions.
+                  Focused on enhancing web performance and providing engaging
+                  user experiences.
                 </div>
 
                 <div

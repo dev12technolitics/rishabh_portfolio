@@ -2,24 +2,31 @@ import Image from "next/image";
 import YEARSOFEXPERIENCE from "../../assets/YEARSOFEXPERIENCE.png";
 import circaldot from "../../assets/circal_dot.png";
 
+import Head from "next/head";
 import rishabh from "../../assets/rishabh.png";
 import square from "../../assets/xyz.png";
 import ExperienceCarousel from "../../components/About/ExperienceCarousel";
 import experienceData from "../../data/experienceData";
 import whatdoData from "../../data/whatdoData";
-import Head from "next/head";
 
 const About = () => {
   return (
     <>
       <Head>
         <title>Rishabh Tiwari | Front-End Developer Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"></meta>
-        <link rel="icon" type="image/png" sizes="192x192" href="/favicon.ico.png" />
+        <meta
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport"
+        ></meta>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/favicon.ico.png"
+        />
       </Head>
 
       <div className="container mt-[80px]">
-
         <div className="grid grid-cols-12 w-full">
           <div
             className="col-span-12 lg:col-span-6 
@@ -104,11 +111,10 @@ const About = () => {
               >
                 <h3 className="headding_three mb-2 text-cyan1">Who I’m</h3>
                 <p className="paragraph text-white/95">
-                  Experienced web developer and trainer with passion for
-                  creating attractive and interactive websites meeting customer
-                  needs and exceeding expectations. Well-versed in developing
-                  React js and Next.js based websites. Excels in HTML, CSS, and
-                  JavaScript development.
+                  Experienced frontend developer with passion for creating
+                  attractive and interactive websites meeting customer needs and
+                  exceeding expectations. Well-versed in developing React js and
+                  Next.js based websites and web app.
                 </p>
               </div>
             </div>
@@ -144,7 +150,7 @@ const About = () => {
 
             <p className="paragraph text-white/95">
               Well-versed in developing React js and Next.js based websites.
-              Excels in HTML, CSS, and JavaScript development.
+              Excels in JavaScript, figma, html and css development.
             </p>
 
             <div className="">
@@ -184,9 +190,7 @@ const About = () => {
           </div>
         </div>
 
-
         <div className="grid grid-cols-12 mt-[80px]">
-
           <div className="col-span-12 lg:col-span-4 lg:order-2 flex flex-col justify-center content_marginbottom">
             <div
               className="flex items-center flex-col lg:flex-row xl:flex-row
@@ -197,12 +201,11 @@ const About = () => {
             </div>
 
             <p className="paragraph text-white/95">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              Experienced in creating responsive, user-centric websites and
+              delivering tailored solutions. Focused on enhancing web
+              performance and providing engaging user experiences.
             </p>
           </div>
-
 
           <div className="col-span-12 lg:col-span-8 lg:order-1 w-full flex justify-center whatdo_padding">
             <div
@@ -214,7 +217,7 @@ const About = () => {
                   <div
                     className="bg-blue1/40 flex  flex-col items-center 
                   backdrop-blur-sm border-[3px] rounded-xl paragraph text-white/95
-                   border-white/50 shadow-lg p-[20px] relative z-10 glass_home"
+                   border-white/50 shadow-lg p-[20px] relative h-full z-10 glass_home"
                   >
                     <div className="w-1/5">
                       <Image
@@ -238,7 +241,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        
       </div>
     </>
   );

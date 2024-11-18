@@ -7,7 +7,7 @@ const rishabhdata = [
   {
     id: 2,
     title: "Residence",
-    paragraph: "Motia Plaza, near Police Station, Baddi, Himachal Pradesh",
+    paragraph: "Rewa Madhya Pradesh",
   },
   {
     id: 3,
@@ -17,7 +17,7 @@ const rishabhdata = [
   {
     id: 4,
     title: "Address",
-    paragraph: "Village mahudar District Satna M.P."
+    paragraph: "Village mahudar District Satna Madhya Pradesh",
   },
   {
     id: 5,
@@ -30,7 +30,6 @@ const rishabhdata = [
     title: "E-mail",
     paragraph: "rishabhtiwarics@gmail.com",
   },
-
 ];
 
 export default rishabhdata;

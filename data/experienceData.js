@@ -4,7 +4,7 @@ const experienceData = [
     designation: "Web Developer",
     company: "Star Reify Tech Solution",
     start_date: "April 2024",
-    end_date: "Present",
+    end_date: "October 2024",
   },
   {
     id: 2,

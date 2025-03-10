@@ -1,17 +1,17 @@
 const experienceData = [
   {
     id: 1,
+    designation: "Associate Professor",
+    company: "CLG Institute of Engineering and Technology",
+    start_date: "March 2025",
+    end_date: "Present",
+  },
+  {
+    id: 2,
     designation: "Web Developer",
     company: "Star Reify Tech Solution",
     start_date: "April 2024",
     end_date: "October 2024",
-  },
-  {
-    id: 2,
-    designation: "Web Designer Trainer ",
-    company: "9i Technologies Pvt Ltd",
-    start_date: "February 2024 ",
-    end_date: "March 2024",
   },
   {
     id: 3,

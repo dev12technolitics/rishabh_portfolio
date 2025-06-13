@@ -4,7 +4,7 @@ const experienceData = [
     designation: "Associate Professor",
     company: "CLG Institute of Engineering and Technology",
     start_date: "March 2025",
-    end_date: "Present",
+    end_date: "May 2025",
   },
   {
     id: 2,

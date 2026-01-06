@@ -1,11 +1,8 @@
 import Image from "next/image";
-import React from "react";
-import linedot from "../../assets/bnr-line.png";
 import circaldot from "../../assets/circal_dot.png";
 import dubblestar from "../../assets/dubblestar.png";
 import starone from "../../assets/half-star.png";
 import hii from "../../assets/hello.png";
-import multistar from "../../assets/multistar.png";
 import rishabh from "../../assets/rishabh.png";
 import { AnimatedText } from "../Animate";
 
@@ -43,20 +40,6 @@ const HomePage = () => {
               className="bg-gradient-to-b from-white to-blue1/20 
             p-[3px] rounded-xl"
             >
-              <div
-                className="absolute
-               top-[-7px] arrow-animation 
-               right-[-20px] z-10 w-1/5 h-1/5 hidden lg:block"
-              >
-                <Image
-                  src={linedot}
-                  alt="image"
-                  width={500}
-                  height={300}
-                  className="rounded-xl"
-                />
-              </div>
-
               <div className="image-container rounded-xl">
                 <Image
                   src={rishabh}
@@ -86,19 +69,6 @@ const HomePage = () => {
               </div>
 
               <div className="relative w-full">
-                <div
-                  className="absolute circular-animation
-                  top-0 right-0 w-20 h-20 z-0"
-                >
-                  <Image
-                    src={multistar}
-                    alt="image"
-                    width={500}
-                    height={300}
-                    className="object-cover"
-                  />
-                </div>
-
                 <div className="py-4 relative z-10">
                   <h1
                     className="headding mb-0 flex 

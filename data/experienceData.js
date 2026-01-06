@@ -1,10 +1,10 @@
 const experienceData = [
   {
     id: 1,
-    designation: "Associate Professor",
-    company: "CLG Institute of Engineering and Technology",
-    start_date: "March 2025",
-    end_date: "May 2025",
+    designation: "Frontend developer",
+    company: "Mittal technologies",
+    start_date: "November 2025",
+    end_date: "Present",
   },
   {
     id: 2,
